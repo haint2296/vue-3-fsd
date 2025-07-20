@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src", "orval.config.ts", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}

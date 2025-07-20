@@ -5,6 +5,7 @@ import { configDefaults } from 'vitest/config'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base:'vue-3-fsd',
   css: {
     devSourcemap: true,
   },

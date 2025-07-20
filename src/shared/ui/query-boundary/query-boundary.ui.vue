@@ -12,7 +12,12 @@ const slots = defineSlots<{
 </script>
 
 <template>
-  <div v-if="isLoading">Loading</div>
+  <div v-if="isLoading">
+    Loading
+  </div>
   <!-- <Error v-else-if="isError" :error="error" /> -->
-  <slot v-else :data="data" />
+  <slot
+    v-else
+    :data="data"
+  />
 </template>

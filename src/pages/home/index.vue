@@ -1,11 +1,24 @@
 <template>
   <div>
-    <QueryBoundary :isLoading="isPending" :isError="!!error" :error="error" :data="data ?? []">
+    <QueryBoundary
+      :is-loading="isPending"
+      :is-error="!!error"
+      :error="error"
+      :data="data ?? []"
+    >
       <template #default="{ data }">
-        <div v-for="item in data" :key="item.id">
+        <div
+          v-for="item in data"
+          :key="item.id"
+        >
           <div>{{ item.name }}</div>
         </div>
-        <button type="button" @click="handleRefetch">Refetch</button>
+        <button
+          type="button"
+          @click="handleRefetch"
+        >
+          Refetch
+        </button>
       </template>
     </QueryBoundary>
 
